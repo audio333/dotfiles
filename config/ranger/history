@@ -1,0 +1,50 @@
+search yout
+search youtube
+search youtube-viewer
+search mpsyt
+search dow
+search publi
+search Publ
+search .scrip
+search zsh
+mkdir dotfiles
+rename .make.sh
+search dotfiles
+search we
+mkdir no-audio
+q
+search lara
+search fira
+search desk
+open_with 
+bulkrename
+mkdir Ranger
+mkdir Tmux ZSH
+rename Tmux
+delete
+search 
+search vide
+search calendar
+search System
+search CIFS
+search imag
+search Desk
+search
+search pict
+fasd Reference
+fasd mps
+fasd blog
+fasd symlink
+search picture
+fasd mountie
+fasd zsh
+fasd local
+fasd gotbletu
+
+fasd music
+rename aliasrc_v2.txt
+search web
+search ranger
+pwd
+mkdir config
+fasd got

@@ -94,4 +94,8 @@ augroup autosourcing
 augroup END
 
 
-
+"---------------------------------
+"  Save Text Folding
+"---------------------------------
+autocmd BufWinLeave *.* mkview 
+autocmd BufWinEnter *.* silent loadview  

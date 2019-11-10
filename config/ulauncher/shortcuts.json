@@ -1,0 +1,102 @@
+{
+    "465e451a-efb1-403f-928a-52628d8a23b3": {
+        "id": "465e451a-efb1-403f-928a-52628d8a23b3",
+        "name": "Google Search",
+        "keyword": "g",
+        "cmd": "https://google.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/google-search-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1570192081.0195093
+    },
+    "7796563e-e257-42c4-8369-c1cfc8a09c48": {
+        "id": "7796563e-e257-42c4-8369-c1cfc8a09c48",
+        "name": "Stack Overflow",
+        "keyword": "so",
+        "cmd": "http://stackoverflow.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/stackoverflow-icon.svg",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1570192081.0196035
+    },
+    "d01ce40d-b2f1-4e13-831e-96a7c5aa89f4": {
+        "id": "d01ce40d-b2f1-4e13-831e-96a7c5aa89f4",
+        "name": "Wikipedia",
+        "keyword": "wiki",
+        "cmd": "https://en.wikipedia.org/wiki/%s",
+        "icon": "/usr/share/ulauncher/media/wikipedia-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1570192081.0196753
+    },
+    "d7498ad5-b767-4331-8852-b07bfd915eab": {
+        "id": "d7498ad5-b767-4331-8852-b07bfd915eab",
+        "name": "YouTube",
+        "keyword": "yt",
+        "cmd": "https://www.youtube.com/results?search_query=%s",
+        "icon": null,
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1570192315.637951
+    },
+    "4da24b58-f412-4157-b0b3-1dc599f5b0b4": {
+        "id": "4da24b58-f412-4157-b0b3-1dc599f5b0b4",
+        "name": "Shopee",
+        "keyword": "sh",
+        "cmd": "https://shopee.ph/search?keyword=%s",
+        "icon": null,
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1570192451.870908
+    },
+    "9aac2f35-66eb-432f-ac45-af01adfa9441": {
+        "id": "9aac2f35-66eb-432f-ac45-af01adfa9441",
+        "name": "Wordpress Tutorial",
+        "keyword": "wp",
+        "cmd": "http://wordpresstutorial.test",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1570515552.8261921
+    },
+    "254b1a26-0509-4c8d-a7ef-bd59127961d7": {
+        "id": "254b1a26-0509-4c8d-a7ef-bd59127961d7",
+        "name": "GlobeAtHome",
+        "keyword": "globe",
+        "cmd": "http://192.168.254.254",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1570594930.855861
+    },
+    "3eab28d6-4958-4385-a8aa-b35ceb77e7a6": {
+        "id": "3eab28d6-4958-4385-a8aa-b35ceb77e7a6",
+        "name": "Facebook Video",
+        "keyword": "fbv",
+        "cmd": "https://www.facebook.com/search/videos/?q=%s&epa=SEARCH_BOX",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1571390047.3578732
+    },
+    "073aa8ee-2a77-4ce9-aa29-d6dafb6e25fc": {
+        "id": "073aa8ee-2a77-4ce9-aa29-d6dafb6e25fc",
+        "name": "Facebook Watch",
+        "keyword": "fb",
+        "cmd": "https://www.facebook.com/watch/search/?query=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1571393113.1815608
+    },
+    "3f20ae94-60b5-4a79-a199-8f5f7904d5ec": {
+        "id": "3f20ae94-60b5-4a79-a199-8f5f7904d5ec",
+        "name": "References",
+        "keyword": "md",
+        "cmd": "https://raw.githubusercontent.com/audio333/references/master/%s.md",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1572076335.7818403
+    }
+}

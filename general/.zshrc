@@ -117,7 +117,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="sudo vim ~/.zshrc"
+# alias zshconfig="sudo vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
@@ -127,37 +127,6 @@ alias zshconfig="sudo vim ~/.zshrc"
 
 bindkey '^`' autosuggest-clear
 
-
-#---------------------------
-#  Vim Mode Settings
-#---------------------------
-
-#enable vim mode on command line
-bindkey -v
-
-# no delay entering normal mode
-# https://coderwall.com/p/h63etq
-# https://github.com/pda/dotzsh/blob/master/keyboard.zsh#L10
-# 10ms for key sequences
-KEYTIMEOUT=1
-
-# show vim status
-# http://zshwiki.org/home/examples/zlewidgets
-function zle-line-init zle-keymap-select {
-   RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-   RPS2=$RPS1
-   zle reset-prompt
-}
-zle -N zle-line-init
-zle -N zle-keymap-select
-
-# history search in vim mode
-# http://zshwiki.org./home/zle/bindkeys#why_isn_t_control-r_working_anymore
-# ctrl+r to search history
-bindkey -M viins '^r' history-incremental-search-backward
-bindkey -M vicmd '^r' history-incremental-search-backward
-
-
 #---------------------------
 #  Power Line
 #---------------------------
@@ -166,18 +135,150 @@ bindkey -M vicmd '^r' history-incremental-search-backward
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
+#---------------------------
+#  FZF
+#---------------------------
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #---------------------------
-#  Global Alias
+#  FASD
 #---------------------------
+eval "$(fasd --init auto)"
 
+#-------- History {{{
+#------------------------------------------------------
+# get more info: $man zshoptions
+
+setopt APPEND_HISTORY
+setopt EXTENDED_HISTORY
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_NO_STORE
+setopt HIST_REDUCE_BLANKS
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_FIND_NO_DUPS
+setopt HIST_VERIFY
+setopt SHARE_HISTORY
+setopt INTERACTIVE_COMMENTS        # pound sign in interactive prompt
+HISTFILE=~/.zsh_history            # where to save zsh history
+HISTSIZE=10000
+SAVEHIST=10000
+cfg-history() { $EDITOR $HISTFILE ;}
+
+#
+# }}}
+#-------- Vim Mode {{{
+#------------------------------------------------------
+# enable vim mode on commmand line
+bindkey -v
+
+# edit command with editor
+# http://stackoverflow.com/a/903973
+# usage: type someshit then hit Esc+v
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+
+
+
+# no delay entering normal mode
+# https://github.com/pda/dotzsh/blob/master/keyboard.zsh#L10
+# 10ms for key sequences
+KEYTIMEOUT=1
+
+# show vim status
+# http://zshwiki.org/home/examples/zlewidgets
+function zle-line-init zle-keymap-select {
+    RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+    RPS2=$RPS1
+    zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
+
+# add missing vim hotkeys
+# fixes backspace deletion issues
+# http://zshwiki.org/home/zle/vi-mode
+bindkey -a u undo
+# bindkey -a '^R' redo	# conflicts with history search hotkey
+bindkey -a '^T' redo
+bindkey '^?' backward-delete-char	#backspace
+
+# history search in vim mode
+# http://zshwiki.org./home/zle/bindkeys#why_isn_t_control-r_working_anymore
+bindkey -M viins '^r' history-incremental-search-backward
+bindkey -M vicmd '^r' history-incremental-search-backward
+
+# use cursor blinker color as indicator of vi mode
+# http://andreasbwagner.tumblr.com/post/804629866/zsh-cursor-color-vi-mode
+# http://reza.jelveh.me/2011/09/18/zsh-tmux-vi-mode-cursor
+
+# bug; 112 ascii randomly showing up
+
+#zle-keymap-select () {
+#  if [ $KEYMAP = vicmd ]; then
+#    if [[ $TMUX = '' ]]; then
+#      echo -ne "\033]12;Red\007"
+#    else
+#      printf '\033Ptmux;\033\033]12;red\007\033\\'
+#    fi
+#  else
+#    if [[ $TMUX = '' ]]; then
+#      echo -ne "\033]12;Grey\007"
+#    else
+#      printf '\033Ptmux;\033\033]12;grey\007\033\\'
+#    fi
+#  fi
+#}
+#zle-line-init () {
+#  zle -K viins
+#  echo -ne "\033]12;Grey\007"
+#}
+#zle -N zle-keymap-select
+#zle -N zle-line-init
+
+# }}}
+#-------- Global Alias {{{
+#------------------------------------------------------
+# http://www.zzapper.co.uk/zshtips.html
+alias -g ND='*(/om[1])' 		# newest directory
+alias -g NF='*(.om[1])' 		# newest file
+
+#alias -g NE='2>|/dev/null'
+alias -g NO='&>|/dev/null'
+alias -g P='2>&1 | $PAGER'
+alias -g VV='| vim -R -'
 alias -g L='| less'
 alias -g M='| most'
+alias -g C='| wc -l'
 alias -g H='| head'
 alias -g T='| tail'
 alias -g G='| grep'
-
+alias -g LL="2>&1 | less"
+alias -g CA="2>&1 | cat -A"
+alias -g NE="2> /dev/null"
+alias -g NUL="> /dev/null 2>&1"
+# some global aliases for redirection
+alias -g N="&>/dev/null"
+alias -g 1N="1>/dev/null"
+alias -g 2N="2>/dev/null"
+alias -g DN="/dev/null"
+alias -g PI="|"
+# Paging with less / head / tail
+alias -g LS='| less -S'
+alias -g EL='|& less'
+alias -g ELS='|& less -S'
+alias -g TRIM='| cut -c 1-$COLUMNS'
+alias -g H='| head'
+alias -g HL='| head -n $(( +LINES ? LINES - 4 : 20 ))'
+alias -g EH='|& head'
+alias -g EHL='|& head -n $(( +LINES ? LINES - 4 : 20 ))'
+alias -g TL='| tail -n $(( +LINES ? LINES - 4 : 20 ))'
+alias -g ET='|& tail'
+alias -g ETL='|& tail -n $(( +LINES ? LINES - 4 : 20 ))'
 # Sorting / counting
 alias -g C='| wc -l'
 alias -g SS='| sort'
@@ -185,8 +286,29 @@ alias -g Su='| sort -u'
 alias -g Sn='| sort -n'
 alias -g Snr='| sort -nr'
 
+#}}}
+#-------- Suffix Alias {{{
+#------------------------------------------------------
+# open file with default program base on extension
+# Ex: 'alias -s avi=mplayer' makes 'file.avi' execute 'mplayer file.avi'
+
+alias -s {avi,flv,mkv,mp4,mpeg,mpg,ogv,wmv}=$PLAYER
+alias -s {flac,mp3,ogg,wav}=$MUSICER
+alias -s {gif,GIF,jpeg,JPEG,jpg,JPG,png,PNG}="background $IMAGEVIEWER"
+alias -s {djvu,pdf,ps}="background $READER"
+alias -s txt=$EDITOR
+alias -s epub="background $EBOOKER"
+alias -s {cbr,cbz}="background $COMICER"
+# might conflict with emacs org mode
+alias -s {at,ch,com,de,net,org}="background $BROWSER"
+
+#}}}
+#-------- External Files {{{
+#------------------------------------------------------
 
 # load alias/functions that works with both zsh/bash
 if [[ -f ~/.aliasrc ]]; then
     source ~/.aliasrc
 fi
+
+#}}}
