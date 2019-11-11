@@ -33,8 +33,8 @@ setlocal nodiff
 setlocal equalprg=
 setlocal errorformat=
 setlocal expandtab
-if &filetype != 'vim'
-setlocal filetype=vim
+if &filetype != 'conf'
+setlocal filetype=conf
 endif
 setlocal fixendofline
 setlocal foldcolumn=0
@@ -96,8 +96,8 @@ setlocal statusline=
 setlocal suffixesadd=
 setlocal swapfile
 setlocal synmaxcol=3000
-if &syntax != 'vim'
-setlocal syntax=vim
+if &syntax != 'conf'
+setlocal syntax=conf
 endif
 setlocal tabstop=2
 setlocal tagcase=
@@ -113,11 +113,36 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 10 - ((9 * winheight(0) + 19) / 39)
+5,35fold
+36,114fold
+115,189fold
+190,299fold
+300,316fold
+317,366fold
+367,395fold
+396,481fold
+482,515fold
+516,794fold
+795,851fold
+857,875fold
+876,901fold
+902,1010fold
+1011,1076fold
+1082,1106fold
+1112,1171fold
+1178,1305fold
+1306,1407fold
+1408,1438fold
+1439,1500fold
+1507,1529fold
+1530,1549fold
+1553,1560fold
+1563,1583fold
+let s:l = 1172 - ((90 * winheight(0) + 19) / 39)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-10
+1172
 normal! 0
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost

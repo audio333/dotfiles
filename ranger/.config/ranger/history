@@ -1,7 +1,3 @@
-search yout
-search youtube
-search youtube-viewer
-search mpsyt
 search dow
 search publi
 search Publ
@@ -22,7 +18,6 @@ mkdir Ranger
 mkdir Tmux ZSH
 rename Tmux
 delete
-search 
 search vide
 search calendar
 search System
@@ -36,7 +31,6 @@ fasd mps
 fasd blog
 fasd symlink
 search picture
-fasd mountie
 fasd zsh
 fasd local
 fasd gotbletu
@@ -48,3 +42,9 @@ search ranger
 pwd
 mkdir config
 fasd got
+fasd 
+fasd gotble
+fasd ubuntu
+fasd ranger
+fasd mountie
+search 
