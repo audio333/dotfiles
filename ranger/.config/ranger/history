@@ -1,14 +1,3 @@
-search dow
-search publi
-search Publ
-search .scrip
-search zsh
-mkdir dotfiles
-rename .make.sh
-search dotfiles
-search we
-mkdir no-audio
-q
 search lara
 search fira
 search desk
@@ -17,7 +6,6 @@ bulkrename
 mkdir Ranger
 mkdir Tmux ZSH
 rename Tmux
-delete
 search vide
 search calendar
 search System
@@ -43,8 +31,20 @@ pwd
 mkdir config
 fasd got
 fasd 
-fasd gotble
-fasd ubuntu
-fasd ranger
 fasd mountie
+fasd ranger
+fasd ubunt
+fasd picture
+fasd gotbl
+delete
+search .vimrc
+search .vim
 search 
+fasd ubuntu
+search laraca
+search vim
+fasd gotble
+fasd gotb
+search .xbindkeys
+search dotfiles
+mkdir xbindkeys

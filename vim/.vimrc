@@ -1,8 +1,20 @@
+so ~/.vim/plugins.vim
+
+"---------------------------------
+"  Airline Settings
+"---------------------------------
+
+colorscheme molokai
+let g:airline_theme='simple'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#formatter = 'jsformatter'
+
 "---------------------------------
 "  Key Mappings
 "---------------------------------
 
-"The default leader is \, but a comma is much better.
+" The default leader is \, but a comma is much better.
 let mapleader = ','
 
 " Make it easy to edit the Vimrc file.
@@ -30,11 +42,22 @@ map <space> /
 
 
 "---------------------------------
+"  Split Management
+"---------------------------------
+set splitbelow
+set splitright
+
+nmap <C-J> <C-W><C-J>
+nmap <C-K> <C-W><C-K>
+nmap <C-H> <C-W><C-H>
+nmap <C-L> <C-W><C-L>
+
+"---------------------------------
 "  Settings
 "---------------------------------
 
 syntax enable
-"set backspace=indent,eol,start      "Make backspace behave like every other editor.
+set backspace=indent,eol,start      "Make backspace behave like every other editor.
 set tabstop=2                       "Tab width when on normal mode
 set expandtab
 set softtabstop=2                   "Tab width when on insert mode
@@ -51,7 +74,7 @@ set wildmenu                        "Visual autocomplete for command menu
 
 " colorscheme murphy " good colorschemes: murphy, slate, molokai, badwolf, solarized
 set t_CO=256                        "Use 256 colors. This is useful for Terminal Vim.
-"set guifont=Fira_Code:h17
+set guifont=Fira_Code:h17
 "set number                          "Let's activate line numbers.
 set relativenumber
 set ruler
@@ -97,5 +120,5 @@ augroup END
 "---------------------------------
 "  Save Text Folding
 "---------------------------------
-autocmd BufWinLeave *.* mkview 
-autocmd BufWinEnter *.* silent loadview  
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
