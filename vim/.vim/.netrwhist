@@ -1,11 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/audio333/.gnome'
-let g:netrw_dirhist_2='/home/audio333/.ssh'
-let g:netrw_dirhist_3='/home/audio333/.oh-my-zsh'
-let g:netrw_dirhist_4='/home/audio333'
-let g:netrw_dirhist_5='/home/audio333/Desktop'
-let g:netrw_dirhist_6='/home/audio333/Desktop/pug-sass'
-let g:netrw_dirhist_7='/home/audio333/Desktop/pug-sass/sass'
-let g:netrw_dirhist_8='/home/audio333/dotfiles/make.sh'
-let g:netrw_dirhist_9='/media/audio333/HDD Web Development/Video Tutorials/Web Development Tutorials/Laracasts/Vim Mastery'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/audio333/dotfiles/autokey/.config/autokey/myKeys'
+let g:netrw_dirhist_2='/home/audio333/dotfiles/autokey/.config/autokey'

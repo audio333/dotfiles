@@ -1,50 +1,50 @@
-search lara
-search fira
-search desk
-open_with 
-bulkrename
-mkdir Ranger
-mkdir Tmux ZSH
-rename Tmux
-search vide
-search calendar
-search System
-search CIFS
-search imag
-search Desk
-search
-search pict
-fasd Reference
-fasd mps
-fasd blog
-fasd symlink
-search picture
-fasd zsh
-fasd local
-fasd gotbletu
-
-fasd music
-rename aliasrc_v2.txt
-search web
-search ranger
-pwd
-mkdir config
-fasd got
-fasd 
-fasd mountie
-fasd ranger
-fasd ubunt
-fasd picture
-fasd gotbl
-delete
-search .vimrc
-search .vim
-search 
-fasd ubuntu
-search laraca
-search vim
-fasd gotble
 fasd gotb
 search .xbindkeys
 search dotfiles
 mkdir xbindkeys
+search level
+mkdir LevelUpTuts
+mkdir Figma
+mkdir PowerCert Animated Videos
+mkdir Linus Sebastian
+search .zshrc.
+search .oh-my
+open_with 
+search newhome
+mkdir tutorials
+search sshfs
+search SSD
+search
+search vi
+search rename
+bulkrename
+search subl
+search package
+search .confi
+search sublime-te
+search packa
+pwd
+!pwd
+search pack
+search user
+search code
+mkdir ~/dotfiles/sublime-text-3/.config/sublime-text-3/Packages/User/
+search web
+search vim
+trash
+rename
+rename view
+search trash
+search ranger
+search dot
+search desk
+search 
+search dotf
+search autokey
+mkdir newcopy
+search new
+
+delete
+search .config
+search sublimte
+search sublime

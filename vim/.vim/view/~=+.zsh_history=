@@ -92,7 +92,7 @@ setlocal nospell
 setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
 setlocal spellfile=
 setlocal spelllang=en
-setlocal statusline=
+setlocal statusline=%!airline#statusline(2)
 setlocal suffixesadd=
 setlocal swapfile
 setlocal synmaxcol=3000
@@ -113,11 +113,11 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 4109 - ((38 * winheight(0) + 19) / 39)
+let s:l = 1685 - ((28 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-4109
+1685
 normal! 0
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost

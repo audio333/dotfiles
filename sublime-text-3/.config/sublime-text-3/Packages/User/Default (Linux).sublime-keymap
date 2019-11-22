@@ -1,0 +1,180 @@
+[
+	// Basic
+	{ "keys": ["ctrl+v"], "command": "paste_and_indent" },
+	{ "keys": ["ctrl+shift+v"], "command": "paste" },
+	{
+		"keys": ["control+alt+i"],
+		"command": "reindent"
+	},
+	{
+		"keys": ["ctrl+alt+k"],
+		"command": "toggle_setting",
+		"args":
+		{
+		    "setting": "word_wrap"
+		}
+	},
+	{
+		"keys": ["ctrl+alt+l"],
+		"command": "toggle_setting",
+		"args":
+		{
+		    "setting": "line_numbers"
+		}
+	},
+	{
+		"keys": ["control+alt+b"],
+		"command": "toggle_status_bar"
+	},
+	{
+		"keys": ["control+alt+m"],
+		"command": "toggle_menu"
+	},
+
+	// Vintageous
+	{
+		"keys": ["k", "j"],
+		"command": "_enter_normal_mode",
+		"args": {
+			"mode": "mode_insert"
+		},
+		"context": [{"key": "vi_insert_mode_aware"}]
+	},
+	
+	// Ace Jump
+	{
+		"keys": ["control+shift+;"],
+		"command": "ace_jump_word"
+	},
+	{
+		"keys": ["control+shift+'"],
+		"command": "ace_jump_char"
+	},
+	{
+		"keys": ["control+shift+."],
+		"command": "ace_jump_line"
+	},
+	{
+		"keys": ["control+shift+,"],
+		"command": "ace_jump_within_line"
+	},
+	{
+		"keys": ["alt+;"],
+		"command": "ace_jump_select"
+	},
+	{
+		"keys": ["alt+'"],
+		"command": "ace_jump_add_cursor"
+	},
+	{
+		"keys": ["alt+."],
+		"command": "ace_jump_after"
+	},
+
+
+	// Panes Layout
+	{
+		"keys": ["alt+right"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.3, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	},
+	{
+		"keys": ["alt+left"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.7, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	},
+	{
+		"keys": ["alt+shift+right"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.05, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	},
+	{
+		"keys": ["alt+shift+left"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.95, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	},
+	{
+		"keys": ["alt+down"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 0.3, 1.0],
+			"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+		}
+	},
+	{
+		"keys": ["alt+up"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 0.7, 1.0],
+			"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+		}
+	},
+	{
+		"keys": ["alt+shift+down"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 0.05, 1.0],
+			"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+		}
+	},
+	{
+		"keys": ["alt+shift+up"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 0.95, 1.0],
+			"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+		}
+	},
+
+	// Scroll
+	{ "keys": ["alt+k"], "command": "scroll_lines", "args": {"amount": 1.0 } },
+	{ "keys": ["alt+j"], "command": "scroll_lines", "args": {"amount": -1.0 } },
+	{ "keys": ["alt+l"], "command": "scroll_width", "args": {"amount": 30 } },
+	{ "keys": ["alt+h"], "command": "scroll_width", "args": {"amount": -30 } },
+
+	// Terminus
+	// Toggle the default shell in panel
+    { "keys": ["alt+t"], "command": "toggle_terminus_panel" },
+
+    // Open a terminal view at current file directory
+    {
+        "keys": ["ctrl+alt+t"], "command": "terminus_open", "args": {
+            "cwd": "${file_path:${folder}}"
+        }
+    },
+    {
+    	"keys": ["ctrl+w"],
+    	"command": "terminus_close",
+    	"context": [{"key":"terminus_view"}]
+    }
+
+ ]
+

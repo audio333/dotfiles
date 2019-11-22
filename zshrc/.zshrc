@@ -312,3 +312,9 @@ if [[ -f ~/.aliasrc ]]; then
 fi
 
 #}}}
+
+# WP CLI
+autoload bashcompinit
+bashcompinit
+source ~/dotfiles/wp-completion.bash
+

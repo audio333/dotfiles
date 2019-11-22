@@ -56,6 +56,7 @@ nmap <C-L> <C-W><C-L>
 "  Settings
 "---------------------------------
 
+"set foldmethod=marker               "auto folding: using 3 open/closing curly brackets
 syntax enable
 set backspace=indent,eol,start      "Make backspace behave like every other editor.
 set tabstop=2                       "Tab width when on normal mode

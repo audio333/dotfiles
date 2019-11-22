@@ -1,0 +1,25 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AceJump",
+		"AdvancedNewFile",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"Emmet",
+		"Gist",
+		"Horizontal Scroll",
+		"Origami",
+		"Package Control",
+		"PHP Companion",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"Terminus",
+		"Theme - Cobalt2",
+		"Vintageous",
+		"WordPress Snippets"
+	],
+}
