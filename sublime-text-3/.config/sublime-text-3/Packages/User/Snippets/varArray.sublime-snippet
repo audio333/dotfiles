@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+${1:protected} \$${2:guarded} = [$0];
+]]></content>
+<tabTrigger>var</tabTrigger>
+<description>Variable</description>
+<scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, storage.modifier.php</scope>
+</snippet>

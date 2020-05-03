@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+Vue.component(${1:'component-name'}, require(${0:'./components/path'}).default);
+
+]]></content>
+<tabTrigger>vuec</tabTrigger>
+<description>Vue Component</description>
+<scope>source.js</scope>
+</snippet>

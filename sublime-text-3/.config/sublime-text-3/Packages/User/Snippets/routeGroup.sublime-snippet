@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+${1:// /admin/XXX: Logged-in users - with "auth" middleware and prefix name of admin.}
+Route::middleware(['${2:auth}'])
+	->namespace('${3:Admin}')
+	->prefix('${4:admin}')
+	->name('${5:admin.}')
+	->group(function() {
+		$0
+	});
+
+]]></content>
+<tabTrigger>rougr</tabTrigger>
+<description>Route group</description>
+<scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php</scope>
+</snippet>

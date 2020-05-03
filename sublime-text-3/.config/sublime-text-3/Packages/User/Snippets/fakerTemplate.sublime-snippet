@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+'name' => $faker->word,
+'title' => $faker->sentence,
+'content' => $faker->paragraph,
+'event_date' => $faker->dateTime,
+]]></content>
+<tabTrigger>faker</tabTrigger>
+<description>Faker Array Template</description>
+<scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, punctuation.terminator.expression.php</scope>
+</snippet>

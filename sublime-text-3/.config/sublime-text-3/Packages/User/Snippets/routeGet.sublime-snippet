@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+Route::${1:get}('${2:/uri}', '${3:Name}Controller@${4:method}')${0:->name('${5:home}')};
+]]></content>
+<tabTrigger>rouge</tabTrigger>
+<description>Route get</description>
+<scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.path.php, support.class.php</scope>
+</snippet>

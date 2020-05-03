@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+${4:/**
+ * ${1:Method description}
+ *
+ * @param  ${2:\Illuminate\Http\Request  $request}
+ * @return ${3:void}
+ */
+}${5:public} function ${6:name}(${7:args})
+{
+	$0
+}
+]]></content>
+<tabTrigger>met</tabTrigger>
+<description>method | function</description>
+<scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php</scope>
+</snippet>
