@@ -58,7 +58,7 @@ cfg-gitignore() { $EDITOR ~/Public/dotfiles/.gitignore ;}
 #cfg-hintrc() { $EDITOR ~/.hintrc ;}
 cfg-hosts() { sudo $EDITOR /etc/hosts ;}
 #cfg-hyperterminal() { $EDITOR ~/.hyper.js ;}
-#cfg-i3wm() { $EDITOR ~/.i3/config ;}
+cfg-i3wm() { $EDITOR ~/.config/i3/config ;}
 #cfg-inputrc() { $EDITOR ~/.inputrc ;}
 #cfg-internetarchive() { $EDITOR ~/.config/ia.ini ;} # archive.org downloader https://internetarchive.readthedocs.io/en/latest/
 #cfg-keynavrc() { $EDITOR ~/.keynavrc ;}
@@ -86,9 +86,9 @@ cfg-nanorc() { $EDITOR ~/.nanorc;}
 #cfg-newsbeuter() { $EDITOR ~/.newsbeuter/config ;}
 #cfg-newsbeuter-queue() { $EDITOR ~/.newsbeuter/queue ;}
 #cfg-newsbeuter-urls() { $EDITOR ~/.newsbeuter/urls ;}
-#cfg-newsboat() { $EDITOR ~/.newsboat/config ;}
-#cfg-newsboat-queue() { $EDITOR ~/.newsboat/queue ;}
-#cfg-newsboat-urls() { $EDITOR ~/.newsboat/urls ;}
+cfg-newsboat() { $EDITOR ~/.newsboat/config ;}
+cfg-newsboat-queue() { $EDITOR ~/.newsboat/queue ;}
+cfg-newsboat-urls() { $EDITOR ~/.newsboat/urls ;}
 cfg-nvim() { $EDITOR ~/.config/nvim/init.vim ;}
 #cfg-pastebinit() { $EDITOR ~/.pastebinit.xml ;}
 #cfg-pianobar() { $EDITOR ~/.config/pianobar/config ;}
@@ -900,4 +900,35 @@ g/() { cd / && lst ;}
 
 
 
+############################
+##### WEB DEVELOPMENT ######
+############################
+
+
+#visual studio code issue
 codex() { code --disable-gpu $@ ;}	
+
+#browser-sync alias
+bsync() { browser-sync start --server --files "*" ;}
+
+
+#-------- Laravel {{{
+#------------------------------------------------------
+
+# Artisan
+art() { php artisan $@ ;}
+
+# Route
+visit() {
+  curl -I http://localhost:3000/$1
+}
+
+# Vagrant
+alias v="vagrant"
+alias vu="cd ~/projects/Homestead && vagrant up"
+
+
+# }}}
+
+# Simple Server for file sharing
+alias myserver="python2 -m SimpleHTTPServer 8080" 

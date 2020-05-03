@@ -1,0 +1,87 @@
+------------------------
+-------NEWS&JOBS--------
+------------------------
+https://data.gmanews.tv/gno/rss/news/feed.xml "~GMA: News" "news"
+https://data.gmanews.tv/gno/rss/news/nation/feed.xml "~GMA: Nation" "news"
+https://data.gmanews.tv/gno/rss/videos/show/24oras/feed.xml "~GMA: 24oras" "news" 
+http://www.indeed.com.ph/rss?q=web+developer&l=Philippines "~JOB: INDEED" "jobs"
+
+------------------------
+--------WEB-DEV---------
+------------------------
+https://feed.laravel-news.com/ "~LARAVEL: Laravel News" "laravel"
+https://laraveldaily.com/feed/ "~LARAVEL: Laravel Daily" "laravel"
+https://css-tricks.com/feed/ "~FE: CSS Tricks" "css"
+http://www.codexworld.com/feed/ "~BE: Codex World" "php"
+https://alecaddd.com/feed/ "~DEV: Alecaddd" "dev"
+
+------------------------
+---------LINUX----------
+------------------------
+http://lukesmith.xyz/rss.xml "~LINUX: LukeSmithxyz" "linux"
+https://distrowatch.com/news/dw.xml "~LINUX: DistroWatch" "linux"
+https://itsfoss.com/feed/ "~LINUX: It's Foss" "linux"
+
+------------------------
+-------TECHNOLOGY-------
+------------------------
+https://data.gmanews.tv/gno/rss/scitech/technology/feed.xml "~GMA: Technology" "tech"
+https://www.teknogadyet.com/feeds/posts/default?alt=rss "~TECH: Teknogadyet" "tech"
+https://feeds.feedburner.com/TechPilipinas "~TECH: TechPilipinas" "tech"
+
+------------------------
+------ENTERTAINMENT-----
+------------------------
+https://movieweb.com/rss/movie-news/ "~MOVIES: Movieweb" "movies"
+https://www.mmamania.com/rss/ufc-news/index.xml "~MMA: UFC" "sports"
+
+------------------------
+--------GIT-REPO--------
+------------------------
+https://github.com/audio333.atom "~GITHUB: Audiocore" "github"
+https://github.com/drehimself.atom "~GITHUB: Andre Madarang" "github" "laravel"
+https://github.com/coderstape.atom "~GITHUB: Coder's Tape" "github" "laravel"
+https://github.com/webdevmatics.atom "~GITHUB: Webdevmatics" "github" "laravel"
+https://github.com/bitfumes.atom "~GITHUB: Bitfumes" "github" "laravel"
+https://github.com/iamshaunjp.atom "~GITHUB: The Net Ninja" "github" "css" "js"
+https://github.com/bradtraversy.atom "~GITHUB: Traversy Media" "github"
+https://github.com/wesbos.atom "~GITHUB: Wesbos" "github" "css" "js"
+https://github.com/alecaddd.atom "~GITHUB: Alecaddd" "github" "wordpress"
+https://github.com/pinoywebs123.atom "~GITHUB: Morley Abuyador" "github" "laravel"
+https://github.com/jefflapuz09.atom "~GITHUB: Jeff Lapuz" "github" "laravel"
+https://github.com/PinoyFreeCoder.atom "~GITHUB: PinoyFreeCoder" "github" "php"
+https://github.com/gotbletu.atom "~GITHUB: Gotbletu" "github" "linux" "dotfiles"
+https://github.com/lukesmithxyz.atom "~GITHUB: Luke Smith XYZ" "github" "dotfiles"
+
+------------------------
+---------YOUTUBE--------
+------------------------
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~YT: Luke Smith" "yt" "linux"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCtb40EQj2inp8zuaQlLx3iQ "~YT: Andre Madarang" "yt" "laravel"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCq0m4ebGqurYQLwD-1aYsvg "~YT: Clean Code Studio" "yt" "laravel"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCnj1BK9TU32-bOlZ9415fuw "~YT: Code Inspire" "yt" "laravel"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCpOIUW62tnJTtpWFABxWZ8g "~YT: Code Course" "yt" "php"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCQI-Ym2rLZx52vEoqlPQMdg "~YT: Coder's Tape" "yt" "laravel"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVyRiMvfUNMA1UPlDPzG5Ow "~YT: Coursetro" "yt" "css" "js"
+https://www.youtube.com/feeds/videos.xml?channel_id=UClb90NQQcskPUGDIXsQEz5Q "~YT: Dev Ed" "yt" "css" "js"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCNlUCA4VORBx8X-h-rXvXEg "~YT: Freek Van der Herten" "yt" "laravel"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC8butISFwT-Wl7EV0hUK0BQ "~YT: freeCodeCamp.org" "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA "~YT: gotbletu" "yt" "linux"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJZv4d5rbIKd4QHMPkcABCw "~YT: Kevin Powell" "yt" "css"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCl10gNAcV2roQm2R1Evn9FQ "~YT: Laraning" "yt" "laravel"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCTuplgOBi6tJIlesIboymGA "~YT: Laravel Business" "yt" "laravel"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCHRp19HU7Y2LwfI0Ai6WAGQ "~YT: LearnWebCode" "yt" "wordpress" "js"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCHjbEHBMRJFSf3ZjXwnHbyw "~YT: Online School" "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCbwXnUipZsLfUckBPsC7Jog "~YT: Online Tutorials" "yt" "css"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC8xTHK97Ng__KZvGcO_K7CA "~YT: Online web ustaad" "yt" "css"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCaQqYZ-ZyYbD0C5DJSGdVIg "~YT: Penguin Digital" "yt" "laravel"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFpZDxOMGzsx05epqfvmzbQ "~YT: PinoyFreeCoder" "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCshZ3rdoCLjDYuTR_RBubzw "~YT: Program With Erik" "yt" "vue"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCR1_G0EoEIb87wi3GPlk-CQ "~YT: Scrypster" "yt" "laravel"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCvHKiUI75ytqUcN851fRR2w "~YT: Skillthrive" "yt" "css" "figma"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCW5YeuERMmlnqo4oq8vwUpg "~YT: The Net Ninja" "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC29ju8bIPH5as8OGnQzwJyA "~YT: Traversy Media" "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCXQC_GB5hG6PkzIhSMZ-hWA "~YT: Watch and Learn" "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFbNIlppjAuEX4znoulh0Cw "~YT: Web Dev Simplified" "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCjpCwTGrMRuTi4FcrCYbkSQ "~YT: WebDevMatics" "yt" "laravel"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCoebwHSTvwalADTJhps0emA "~YT: Wesbos" "yt" "css" "js"

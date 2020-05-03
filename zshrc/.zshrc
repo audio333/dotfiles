@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/audio333/.oh-my-zsh"
+export ZSH="/home/jef/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -70,23 +70,24 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	bower
+	# bower
+  catimg
 	extract
-	git
+	# git
 	gitignore
 	gulp
 	history
-	homestead
-	laravel
-	laravel5
-	npm
-	sublime
-	# sudo
-  tmux
-	vagrant
-	vscode
+	# homestead
+	# laravel
+	# laravel5
+	# npm
+	# sublime
+	sudo
+  # tmux
+	# vagrant
+	# vscode
 	web-search
-	wp-cli
+	# wp-cli
 	zsh-autosuggestions
 	# zsh_reload
 	# zsh-syntax-highlighting
@@ -135,16 +136,6 @@ bindkey '^`' autosuggest-clear
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-#---------------------------
-#  FZF
-#---------------------------
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-#---------------------------
-#  FASD
-#---------------------------
-eval "$(fasd --init auto)"
-
 #-------- History {{{
 #------------------------------------------------------
 # get more info: $man zshoptions
@@ -187,7 +178,7 @@ bindkey -M vicmd v edit-command-line
 # no delay entering normal mode
 # https://github.com/pda/dotzsh/blob/master/keyboard.zsh#L10
 # 10ms for key sequences
-KEYTIMEOUT=1
+KEYTIMEOUT=20
 
 # show vim status
 # http://zshwiki.org/home/examples/zlewidgets
@@ -198,6 +189,9 @@ function zle-line-init zle-keymap-select {
 }
 zle -N zle-line-init
 zle -N zle-keymap-select
+
+# remap escape to kj 
+bindkey -M viins 'kj' vi-cmd-mode
 
 # add missing vim hotkeys
 # fixes backspace deletion issues
@@ -313,8 +307,28 @@ fi
 
 #}}}
 
-# WP CLI
+#---------------------------
+#  WP CLI
+#---------------------------
 autoload bashcompinit
 bashcompinit
 source ~/dotfiles/wp-completion.bash
 
+#---------------------------
+#  FASD
+#---------------------------
+eval "$(fasd --init auto)"
+
+#---------------------------
+#  FZF
+#---------------------------
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPS="--extended"
+export FZF_DEFAULT_COMMAND="fd --type f"
+# export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+#---------------------------
+#  Node Version Manager
+#---------------------------
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm

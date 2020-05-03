@@ -93,10 +93,70 @@
         "id": "3f20ae94-60b5-4a79-a199-8f5f7904d5ec",
         "name": "References",
         "keyword": "md",
-        "cmd": "https://raw.githubusercontent.com/audio333/references/master/%s.md",
+        "cmd": "https://github.com/audio333/references/blob/master/%s.md",
         "icon": null,
         "is_default_search": false,
         "run_without_argument": false,
         "added": 1572076335.7818403
+    },
+    "86785a0d-0ed9-4a31-8681-11f4cac0d55d": {
+        "id": "86785a0d-0ed9-4a31-8681-11f4cac0d55d",
+        "name": "WP functions",
+        "keyword": "wpf",
+        "cmd": "https://developer.wordpress.org/reference/functions/%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1576371992.0997488
+    },
+    "4f57c72f-3f4b-4c73-a209-cefaec0ee2fc": {
+        "id": "4f57c72f-3f4b-4c73-a209-cefaec0ee2fc",
+        "name": "WP hooks",
+        "keyword": "wph",
+        "cmd": "https://developer.wordpress.org/reference/hooks/%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1576372134.0009863
+    },
+    "efae0e4b-6fbc-487e-bc94-0f28f913bd2d": {
+        "id": "efae0e4b-6fbc-487e-bc94-0f28f913bd2d",
+        "name": "WP classes",
+        "keyword": "wpc",
+        "cmd": "https://developer.wordpress.org/reference/classes/%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1576372186.565694
+    },
+    "28420b70-1c94-4136-b0e6-a11b09191262": {
+        "id": "28420b70-1c94-4136-b0e6-a11b09191262",
+        "name": "WP search",
+        "keyword": "wp",
+        "cmd": "https://developer.wordpress.org/?s=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1576372367.3584337
+    },
+    "cdc83865-34b6-4458-8c83-15f0f3124ba8": {
+        "id": "cdc83865-34b6-4458-8c83-15f0f3124ba8",
+        "name": "Can I use",
+        "keyword": "use",
+        "cmd": "https://caniuse.com/#search=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1580106407.5722864
+    },
+    "a5577146-34ae-41fb-86ad-a24bfae5f900": {
+        "id": "a5577146-34ae-41fb-86ad-a24bfae5f900",
+        "name": "Github",
+        "keyword": "gh",
+        "cmd": "https://github.com/%s?tab=repositories",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1585273587.2502587
     }
 }
