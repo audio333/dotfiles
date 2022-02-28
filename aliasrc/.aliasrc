@@ -330,7 +330,7 @@ calc() {
 m-distro() { uname -a && lsb_release -a ;}
 alias m-user='whoami'
 alias m-host='hostname'
-alias m-hardware='lspci' 
+alias m-hardware='lspci'
 alias m-cpu='cat /proc/cpuinfo'
 alias m-memory='cat /proc/meminfo'
 #}}}
@@ -906,7 +906,7 @@ g/() { cd / && lst ;}
 
 
 #visual studio code issue
-codex() { code --disable-gpu $@ ;}	
+codex() { code --disable-gpu $@ ;}
 
 #browser-sync alias
 bsync() { browser-sync start --server --files "*" ;}
@@ -923,6 +923,9 @@ visit() {
   curl -I http://localhost:3000/$1
 }
 
+# Sail
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+
 # Vagrant
 alias v="vagrant"
 alias vu="cd ~/projects/Homestead && vagrant up"
@@ -931,4 +934,12 @@ alias vu="cd ~/projects/Homestead && vagrant up"
 # }}}
 
 # Simple Server for file sharing
-alias myserver="python2 -m SimpleHTTPServer 8080" 
+alias myserver="python2 -m SimpleHTTPServer 8080"
+
+
+############################
+#### WINDOWS POWERSHELL ####
+############################
+
+wsl() { wsl.exe $@ ;}
+function winget { (cd /mnt/c; cmd.exe /c "winget $@";) }
