@@ -943,3 +943,5 @@ alias myserver="python2 -m SimpleHTTPServer 8080"
 
 wsl() { wsl.exe $@ ;}
 function winget { (cd /mnt/c; cmd.exe /c "winget $@";) }
+
+alias lvim="/home/jefbalmes/.local/bin/lvim"
