@@ -140,6 +140,8 @@ cfg-xbindkeysrc() { $EDITOR ~/.xbindkeysrc && killall xbindkeys ; xbindkeys ;}
 cfg-xmodmap() { $EDITOR ~/.Xmodmap ;}
 cfg-xresources() { $EDITOR ~/.Xresources ;}
 #cfg-yaourtrc() { $EDITOR ~/.yaourtrc ;}
+cfg-skhdrc() { $EDITOR ~/.skhdrc ;}
+cfg-yabairc() { $EDITOR ~/.yabairc ;}
 cfg-zshrc() { $EDITOR ~/.zshrc ;}
 #cfg-zurlrc() { $EDITOR ~/.zurlrc ;}
 #}}}
@@ -159,6 +161,9 @@ rld-xmodmap() { xmodmap ~/.Xmodmap ;}
 rld-xmodmap-uskeyboardlayout() { setxkbmap -layout us ;} # reset back to US keyboard http://unix.stackexchange.com/a/151046
 #rld-xresources() { xrdb -load ~/.Xresources ;}
 rld-zshrc() { source ~/.zshrc ;}
+rld-yabairc() { launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai" ;}
+rld-yabai() { brew services restart yabai ;}
+rld-skhd() { brew services restart skhd ;}
 # }}}
 #-------- Alias (Substitution) {{{
 #------------------------------------------------------
@@ -945,3 +950,6 @@ wsl() { wsl.exe $@ ;}
 function winget { (cd /mnt/c; cmd.exe /c "winget $@";) }
 
 alias lvim="/home/jefbalmes/.local/bin/lvim"
+# Mac
+#alias lvim="$HOME/.local/bin/lvim"
+#alias lvim="/Users/jefbalmes/.local/bin/lvim"
